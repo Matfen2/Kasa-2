@@ -1,0 +1,75 @@
+#banner {
+  overflow: hidden;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  #banner {
+    height: 200px;
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #banner {
+    height: 150px;
+    margin-top: -50px;
+    border-radius: 15px;
+  }
+}
+#banner .banner-img {
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#banner .banner-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#banner p {
+  margin: 0;
+  z-index: 3;
+  display: flex;
+  color: white;
+  font-size: 4.6em;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  #banner p {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 425px) {
+  #banner p {
+    padding: 10px;
+    font-size: 1.8em;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 320px) {
+  #banner p {
+    font-size: 1.5em;
+  }
+}/*# sourceMappingURL=Banner.css.map */

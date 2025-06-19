@@ -1,0 +1,89 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -220px;
+  padding: 40px 20px 160px 20px;
+  color: #FF6060;
+
+  @media screen and (max-width: 768px) {
+    margin-top: -120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: -60px;
+  }
+
+  .error-code {
+    font-size: 22rem;
+    font-weight: 700;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 12rem;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 9rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 8rem;
+    }
+  }
+
+  .error-message {
+    font-size: 2.9rem;
+    font-weight: 450;
+    margin-top: -120px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.9rem;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.4rem;
+    }
+  }
+
+  .error-link {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: black;
+    margin-top: 140px;
+    transition: color 0.3s ease;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.0rem;
+    }
+
+    &:hover {
+      color: #FF6060;
+    }
+  }
+}

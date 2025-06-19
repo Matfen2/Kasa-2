@@ -1,0 +1,76 @@
+@mixin flex ($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+}
+
+header {
+  padding: 40px 90px;
+  @include flex (row, space-between, center);
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 20px;
+  }
+
+  .logo-header {
+    width: 100%;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      max-width: 154px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 144px;
+    }
+
+    @media screen and (max-width: 320px) {
+      max-width: 124px;
+    }
+  }
+
+  nav ul {
+    gap: 120px;
+    list-style-type: none;
+    @include flex (row, space-between, center);
+
+    @media screen and (max-width: 768px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+      gap: 20px;
+    }
+
+    li {
+      a {
+        color: black;
+        font-size: 1.6em;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:active {
+          text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.0em;
+        }
+
+        @media screen and (max-width: 425px) {
+          font-size: 0.8em;
+          text-transform: uppercase;
+        }
+
+        @media screen and (max-width: 320px) {
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+}

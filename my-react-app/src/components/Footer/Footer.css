@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .logo-footer {
+  width: 100%;
+  height: 48px;
+  margin-top: 40px;
+  max-width: 160px;
+}
+@media screen and (max-width: 425px) {
+  footer .logo-footer {
+    max-width: 130px;
+    margin-top: 10px;
+  }
+}
+footer .copy {
+  margin-top: 40px;
+  font-size: 1.4em;
+}
+@media screen and (max-width: 425px) {
+  footer .copy {
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=Footer.css.map */
