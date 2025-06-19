@@ -1,6 +1,8 @@
 #banner {
   overflow: hidden;
   border-radius: 25px;
+  margin-top: -20px;
+  box-shadow: -2px 12px 9px -10px #000000;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,6 +13,7 @@
   #banner {
     height: 200px;
     margin-top: -20px;
+    margin-bottom: -10px;
   }
 }
 @media screen and (max-width: 425px) {
