@@ -11,7 +11,7 @@
 .collapse .collapse-header {
   height: 65px;
   padding: 15px 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #FF6060;
   display: flex;
   align-items: center;
@@ -32,6 +32,11 @@
   color: white;
   font-size: 1.7em;
   font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .collapse .collapse-header p {
+    font-size: 1.4em;
+  }
 }
 @media screen and (max-width: 425px) {
   .collapse .collapse-header p {
@@ -59,12 +64,12 @@
   margin-top: -5px;
   transition: height 0.3s ease, padding 0.3s ease;
   padding: 0 20px;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 15px 15px;
   font-size: 1.2em;
   color: #333;
   font-family: "Montserrat", sans-serif;
 }
 .collapse .collapse-body.open {
   height: auto;
-  padding: 15px 20px;
+  padding: 5px 20px;
 }/*# sourceMappingURL=Collapse.css.map */

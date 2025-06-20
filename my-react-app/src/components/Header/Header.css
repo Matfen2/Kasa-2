@@ -56,7 +56,7 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: underline;
 }
-header nav ul li a:active {
+header nav ul li a.active {
   text-decoration: underline;
 }
 @media screen and (max-width: 768px) {

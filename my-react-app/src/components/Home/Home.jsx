@@ -14,10 +14,10 @@ const Home = () => {
       <div className="list-logements">
         {logements.map((logement) => (
           <Card 
-           id={logement.id}
-           key={logement.id}
-           cover={logement.cover}
-           title={logement.title}
+            key={logement.id} 
+            id={logement.id} 
+            title={logement.title} 
+            cover={logement.cover} 
            />
         ))}
       </div>

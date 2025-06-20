@@ -5,11 +5,11 @@ const Card = ({id, cover, title}) => {
   const navigate = useNavigate();
 
   function showLogement() {
-    navigate(`/logement/${id}`);
+    navigate(`/logements/${id}`);
   }
 
   return (
-    <article className="card" key={id} onClick={showLogement}>
+    <article className="card" onClick={showLogement}>
       <div className="card-body">
         <img src={cover} className="card-img" alt={title} />
         <span>{title}</span>

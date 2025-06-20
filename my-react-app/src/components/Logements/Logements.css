@@ -1,0 +1,204 @@
+#logement {
+  padding: 40px 90px;
+  margin: -18px auto;
+}
+@media screen and (max-width: 768px) {
+  #logement {
+    padding: 20px 20px 40px 20px;
+  }
+}
+#logement .slideshow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logement .slideshow img {
+  height: 530px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+@media screen and (max-width: 425px) {
+  #logement .slideshow img {
+    height: 400px;
+  }
+}
+#logement .listInfo {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#logement .listInfo .info {
+  margin-top: -5px;
+}
+#logement .listInfo .info .title {
+  color: #ff6f61;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+#logement .listInfo .info .country {
+  margin-top: -31px;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#logement .listInfo .info .tags {
+  margin-top: 5px;
+}
+#logement .listInfo .info .tags .tag {
+  display: inline-block;
+  background: #ff6f61;
+  padding: 5px 35px;
+  margin-right: 12px;
+  border-radius: 9px;
+  text-align: center;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo .info .tags .tag {
+    font-size: 0.9em;
+  }
+}
+#logement .listInfo .host {
+  width: 190px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo .host {
+    width: 360px;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  #logement .listInfo .host {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #logement .listInfo .host {
+    width: 280px;
+  }
+}
+#logement .listInfo .host .identity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#logement .listInfo .host .identity .name {
+  width: 55%;
+  line-height: 32px;
+  text-align: right;
+  color: #ff6f61;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo .host .identity .name {
+    font-size: 1.2em;
+    margin-right: -40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #logement .listInfo .host .identity .name {
+    font-size: 1em;
+  }
+}
+#logement .listInfo .host .identity .people {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo .host .identity .people {
+    width: 54px;
+    height: 54px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #logement .listInfo .host .identity .people {
+    width: 46px;
+    height: 46px;
+  }
+}
+#logement .listInfo .host .rating {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-top: 4px;
+}
+#logement .listInfo .host .rating .fa-star {
+  font-size: 1.4em;
+  margin-right: 3px;
+}
+@media screen and (max-width: 425px) {
+  #logement .listInfo .host .rating .fa-star {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 320px) {
+  #logement .listInfo .host .rating .fa-star {
+    font-size: 1em;
+  }
+}
+#logement .listInfo .host .rating .filled {
+  color: #ff6f61;
+}
+#logement .listInfo .host .rating .empty {
+  color: #e0e0e0;
+}
+#logement .listDescribe {
+  width: 100%;
+  gap: 80px;
+  margin: 40px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  #logement .listDescribe {
+    gap: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#logement .listDescribe ul {
+  margin-left: -30px;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 425px) {
+  .info, .host {
+    flex: 1 1 100%;
+  }
+}/*# sourceMappingURL=Logements.css.map */
