@@ -9,19 +9,19 @@
 #banner {
   overflow: hidden;
   border-radius: 25px;
-  margin-top: -20px;
+  margin-top: -25px;
   box-shadow: -2px 12px 9px -10px #000000;
   @include position (relative, 0, 0, 100%, 300px);
 
   @media screen and (max-width: 1024px) {
     height: 200px;
-    margin-top: -20px;
+    margin-top: -40px;
     margin-bottom: -10px;
   }
 
   @media screen and (max-width: 425px) {
-    height: 150px;
-    margin-top: -50px;
+    height: 180px;
+    margin-top: -30px;
     border-radius: 15px;
   }
 
@@ -33,7 +33,7 @@
 
   .banner-overlay {
     z-index: 2;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0);
     @include position (absolute, 0, 0, 100%, 100%);
   }
 

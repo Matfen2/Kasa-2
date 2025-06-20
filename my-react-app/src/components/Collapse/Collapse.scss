@@ -1,0 +1,75 @@
+@mixin flex ($flexDirection, $justifyContent, $alignItems) {
+    display: flex;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+}
+
+.collapse {
+    width: 87%;
+    margin: 7px auto;
+    border-radius: 5px;
+
+    @media screen and (max-width: 425px) {
+        width: 98%;
+    }
+
+    .collapse-header {
+        height: 65px;
+        padding: 15px 15px;
+        border-radius: 5px;
+        background-color: #FF6060;
+        @include flex (row, space-between, center);
+
+        @media screen and (max-width: 1024px) {
+            height: 55px;
+        }
+
+        @media screen and (max-width: 425px) {
+            height: 45px;
+        }
+
+        p {
+            color: white;
+            font-size: 1.7em;
+            font-weight: bold;
+
+            @media screen and (max-width: 425px) {
+                font-size: 1.2em;
+            }
+        }
+
+        .fa-solid {
+            color: white;
+            cursor: pointer;
+            font-size: 1.9em;
+            transition: all 0.2s ease-in;
+
+            @media screen and (max-width: 425px) {
+                font-size: 1.2em;
+            }
+
+            &.open {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .collapse-body {
+        background: #f9f9f9;
+        overflow: hidden;
+        height: 0;
+        margin-top: -5px;
+        transition: height 0.3s ease, padding 0.3s ease;
+        padding: 0 20px;
+        border-radius: 0 0 5px 5px;
+        font-size: 1.2em;
+        color: #333;
+        font-family: "Montserrat", sans-serif;
+
+        &.open {
+            height: auto;
+            padding: 15px 20px;
+        }
+    }
+}

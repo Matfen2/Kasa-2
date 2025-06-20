@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section id="home">
       {/* Bannière */}
-      <Banner bgIMG={bannerHome} title="banner-home" text="Chez vous, partout et ailleurs" />
+      <Banner bgIMG={bannerHome} title="banner-home" text="Chez vous, partout et ailleurs" opacity={0.6} />
 
       {/* Liste de Logements */}
       <div className="list-logements">

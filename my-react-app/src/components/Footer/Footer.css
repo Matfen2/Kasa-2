@@ -8,6 +8,11 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 425px) {
+  footer {
+    padding: 40px;
+  }
+}
 footer .logo-footer {
   width: 100%;
   height: 48px;

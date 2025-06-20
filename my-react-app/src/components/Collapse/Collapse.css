@@ -1,0 +1,70 @@
+.collapse {
+  width: 87%;
+  margin: 7px auto;
+  border-radius: 5px;
+}
+@media screen and (max-width: 425px) {
+  .collapse {
+    width: 98%;
+  }
+}
+.collapse .collapse-header {
+  height: 65px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color: #FF6060;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .collapse .collapse-header {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .collapse .collapse-header {
+    height: 45px;
+  }
+}
+.collapse .collapse-header p {
+  color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+@media screen and (max-width: 425px) {
+  .collapse .collapse-header p {
+    font-size: 1.2em;
+  }
+}
+.collapse .collapse-header .fa-solid {
+  color: white;
+  cursor: pointer;
+  font-size: 1.9em;
+  transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 425px) {
+  .collapse .collapse-header .fa-solid {
+    font-size: 1.2em;
+  }
+}
+.collapse .collapse-header .fa-solid.open {
+  transform: rotate(-180deg);
+}
+.collapse .collapse-body {
+  background: #f9f9f9;
+  overflow: hidden;
+  height: 0;
+  margin-top: -5px;
+  transition: height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  border-radius: 0 0 5px 5px;
+  font-size: 1.2em;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+.collapse .collapse-body.open {
+  height: auto;
+  padding: 15px 20px;
+}/*# sourceMappingURL=Collapse.css.map */
